@@ -1,12 +1,12 @@
 #!/bin/bash
 #prompt the name of directory
 
-echo "Please enter the name of directory :
+echo "Please enter the name of directory : "
 read direct_name
 
 echo "you entered $direct_name"
 
-if I-d "$direct_name"]
+if [ ! -d "$direct_name"]
   then
     echo "Error: Directory '$direct_name' doesn't exists"
     exit 1
@@ -17,12 +17,12 @@ echo -e "\n $direct_name directory exists"
 #List all the names in the given directory
 
 echo "List all the files in $direct_name directory are : "
-Is "$direct_name"
+ls "$direct_name"
 
 #Sort all the files alphabetically
 
 echo -e "Files in sorted order are : "
-Is $direct_name
+ls $direct_name
 
 neu_direct-$direct_name/sorted
 mkdir -p "$new_direct"
